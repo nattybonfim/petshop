@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+<meta charset=”UTF-8”>
+
+				<meta name="description" content="aqui voce coloca uma descriçao da pagina..."/>
+				<meta name="Keywords" content="aqui voce coloca palavras chave..."/>
+				<title> </title>
+				<link type="text/css" rel="stylesheet" href="css/cssFormulario.css">
+				
+				
+				
+</head>		
+
+<body>
+<form method="post" id="fcontato" action="mailto:"><!-- metodo pra guardar informaçoes-->
+
+<fieldset id="usuario">
+
+<legend>Identificaçao do usuario </legend><!-- titulo da caixa-->
+
+
+<p>
+
+<label for="cNome">Nome: </label>
+<input type="text" name="tNome" id="cNome" size="20" maxlength="20" placeholder="Digite seu nome completo" autofocus required/>
+
+</p>
+
+
+
+
+
+<p>
+
+<label for="cSenha">Senha: </label>
+<input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 digitos" required/>
+
+</p>
+
+
+
+<p>
+
+<label for="cSenha">E-mail: </label>
+<input type="email" name="tMail" id="cMail" size="30" maxlength="30" placeholder="Digite seu E-mail" required/>
+
+</p>
+
+
+<fieldset  id="Sexo">
+<legend> Sexo: </legend>
+
+
+
+<input type="radio" name="tSexo" id="cMasc" /> <!-- radio sao as bolinhas de opçao a ser marcada-->
+<label for="cMasc"> Masculino </label>
+<br>
+
+<input type="radio" name="tSexo" id="cFem" />
+<label for="cFem"> Feminino </label>
+<br>
+
+</fieldset>
+
+
+<p> 
+  Data de Nascimento :<input type="date" name="tNasc" id=" cNasc"/><!-- adicionar o calendario  depende do navegador-->
+</p>
+
+
+</fieldset>
+
+<br>
+
+<fieldset id="Endereço">
+
+<legend> Endereço do Usuario</legend>
+
+<p>
+
+		<label for="cRua">Longradouro:</label>
+		<input type="text" name="tRua" id="cRua" size="30" maxlength="30"placeholder=" Rua,Av,travessa" required/>
+</p>
+
+<p>
+
+		<label for="cNum"> Numero:</label>
+		<input type="number" name="tNum" id="cNum" min="0" max="999999"/>
+</p>
+
+
+
+
+<p>
+
+<label for="cEst"> Estado:</label>
+
+<select name="tEst" id="cEst">
+
+		<optgroup label=" Regiao Sudeste">
+		<option value="SP"> Sao Paulo </option>
+		<option value="MG"> Minas Gerais</option>
+		<option value="RJ"> Rio de Janeiro</option>
+		<option value="ES"> Espírito Santo</option>
+	</optgroup>
+
+
+<optgroup label=" Regiao Sul">
+
+		<option value="PR">Parana </option>
+		<option value="SC">Santa catarina</option>
+		<option value="RS">Rio grande do sul</option>
+
+</optgroup>
+</select>
+
+<p>
+
+<label for="cCid">Cidade: </label>
+<input type="text" name="tCid" id="cCid" size="40" maxlength="40" placeholder="Digite a cidade"  required/>
+
+</p>
+</fieldset>
+
+
+<br>
+<fieldset id="Mensagem">
+<legend> Mensagem do Usuario </legend>
+
+
+<p>
+<label for="cUrg">Grau de Urgencia:</label>
+Min<input type="range" name="tUrg" id="cUrg"  min="0" max="10" step="2" />Max
+</p>
+
+
+<p>
+
+ <label for="cMsg">Mensagem: </label>
+ <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem">
+ </textarea>
+</p>
+
+
+
+</fieldset>
+<br>
+<input type="submit" name="tEnviar"/>
+</form>
+
+
+
+
+</body>		

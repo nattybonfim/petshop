@@ -1,0 +1,199 @@
+<!DOCTYPE html> 
+
+<html lang=”pt-br”>
+
+<head> 
+
+<meta charset=”UTF-8”>
+
+<meta name="description" content="Petshop Natty contato..."/>
+<meta name="Keywords" content="petshop natty contato mensagem..."/>
+
+
+<title> Petshop Natty contato </title>
+<link rel="icon" href="imagens/favicon.ico">
+
+<link type="text/css" rel="stylesheet" href="css/formulariopet.css">
+
+
+</head>
+
+<body>
+
+
+<div id="containerf">
+
+<header id="topof">
+
+        <nav id="menuf">
+			<ul>
+		 
+			<li> <a href="index.html">    HOME |    </a> </li>
+			<li> <a href="produtos.html"> PRODUTOS |</a> </li>
+			<li> <a href="Servicos.html"> SERVICOS |</a> </li>
+	        <li> <a href="formulariopet.html">  CONTATO|  </a> </li>
+	    </ul>
+        </nav>
+	
+</header>
+
+
+<section id="bannerf">
+
+	   <figure> 
+			<img id="banner1" src="imagens/bannerpetshop.jpg">
+			<img id="banner2" src="imagens/bannerpet2.jpg">
+	   </figure> 
+
+</section>
+
+<form method="post" id="fcontato" action="mailto:"><!-- metodo pra guardar informaçoes-->
+
+<fieldset id="usuario">
+
+<legend>Identificaçao do usuario </legend><!-- titulo da caixa-->
+
+
+<p>
+
+<label for="cNome">Nome: </label>
+<input type="text" name="tNome" id="cNome" size="20" maxlength="20" placeholder="Digite seu nome completo" autofocus required/>
+
+</p>
+
+
+
+<p>
+
+<label for="cSenha">E-mail: </label>
+<input type="email" name="tMail" id="cMail" size="30" maxlength="30" placeholder="Digite seu E-mail" required/>
+
+</p>
+
+
+
+<p> 
+  Data de Nascimento :<input type="date" name="tNasc" id=" cNasc"/><!-- adicionar o calendario  depende do navegador-->
+</p>
+
+
+<fieldset  id="sexo">
+<legend> Sexo: </legend>
+
+
+
+		<input type="radio" name="tSexo" id="cMasc" /> <!-- radio sao as bolinhas de opçao a ser marcada-->
+		<label for="cMasc"> Masculino </label>
+		<br>
+
+		<input type="radio" name="tSexo" id="cFem" />
+		<label for="cFem"> Feminino </label>
+		<br>
+		
+</fieldset>
+
+
+<fieldset  id="pessoaFJ">
+<legend> Dados: </legend>
+
+
+
+	<input type="radio" name="tpessoaF" id="cpessoaF" /> <!-- radio sao as bolinhas de opçao a ser marcada-->
+	<label for="cpessoaF"> Pessoa Fisica </label>
+	<br>
+
+	<input type="radio" name="tpessoaJ" id="cpessoaJ" />
+	<label for="cpessoaJ"> Pessoa Juridica </label>
+	<br>
+
+	</fieldset>
+
+
+
+</fieldset>
+
+
+
+<fieldset id="Endereço">
+
+<legend> Endereço do Usuario</legend>
+
+<p>
+
+		<label for="cRua">Longradouro:</label>
+		<input type="text" name="tRua" id="cRua" size="30" maxlength="30"placeholder=" Rua,Av,travessa" required/>
+</p>
+
+<p>
+
+		<label for="cNum"> Numero:</label>
+		<input type="number" name="tNum" id="cNum" min="0" max="999999"/>
+</p>
+
+
+
+
+<p>
+
+<label for="cEst"> Estado:</label>
+
+<select name="tEst" id="cEst">
+
+		<optgroup label=" Regiao Sudeste">
+		<option value="SP"> Sao Paulo </option>
+		<option value="MG"> Minas Gerais</option>
+		<option value="RJ"> Rio de Janeiro</option>
+		<option value="ES"> Espírito Santo</option>
+	</optgroup>
+
+
+<optgroup label=" Regiao Sul">
+
+		<option value="PR">Parana </option>
+		<option value="SC">Santa catarina</option>
+		<option value="RS">Rio grande do sul</option>
+
+</optgroup>
+</select>
+
+<p>
+
+<label for="cCid">Cidade: </label>
+<input type="text" name="tCid" id="cCid" size="40" maxlength="40" placeholder="Digite a cidade"  required/>
+
+</p>
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+</fieldset>
+
+<input type="submit" name="tEnviar"/>
+</form>
+
+
+
+
+
+
+
+
+
+<footer id="rodapef"><i><b>
+	2018 PETSHOP NATTY- todos direitos reservados
+	</i></b>
+</footer>
+
+
+</div>
+
+</body>
+
+</html>
